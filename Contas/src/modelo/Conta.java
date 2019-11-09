@@ -1,6 +1,6 @@
 package modelo;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
     private String titular;
     private double saldo;
     private String agencia;
@@ -58,7 +58,7 @@ public abstract class Conta {
 
     @Override
     public String toString(){
-        return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "]";
+        return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "Saldo=" + saldo + "]";
     }
 
     @Override
@@ -67,5 +67,9 @@ public abstract class Conta {
 
         Conta outraConta = (Conta) obj;
         return this.numero == outraConta.numero && this.agencia.equals(outraConta.agencia);
+    }
+
+    public int compareTo(Conta outraConta) {
+        return this.titular.compareTo(outraConta.titular);
     }
 }
