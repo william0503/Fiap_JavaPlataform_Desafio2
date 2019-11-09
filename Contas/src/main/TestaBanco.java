@@ -13,14 +13,14 @@ public class TestaBanco {
         c1.setNumero(1);
         c1.setAgencia("1000");
         c1.deposita(100000);
-        banco.adiciona(c1);
+        banco.adicionaArray(c1);
 
         ContaPoupanca c2 = new ContaPoupanca();
         c2.setTitular("Coringa");
         c2.setNumero(2);
         c2.setAgencia("1000");
         c2.deposita(890000);
-        banco.adiciona(c2);
+        banco.adicionaArray(c2);
 
         for (int i = 0; i < 5; i++) {
             ContaCorrente conta = new ContaCorrente();
@@ -28,9 +28,9 @@ public class TestaBanco {
             conta.setNumero(i);
             conta.setAgencia("1000");
             conta.deposita( i * 1000);
-            banco.adiciona(conta);
+            banco.adicionaArray(conta);
         }
 
-        banco.mostraContas();
+        banco.mostraContasArray();
     }
 }

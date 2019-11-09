@@ -9,10 +9,10 @@ public class TestaPerformanceDeAdicionarNaPrimeiraPosicao {
         System.out.println("Iniciando...");
         long inicio = System.currentTimeMillis();
 
-        //List<Integer> teste = new ArrayList<>();
+        List<Integer> teste = new ArrayList<>();
         //Tempo gasto: 0.046
         //Tempo leitura:0.003
-        List<Integer> teste = new LinkedList<>();
+       // List<Integer> teste = new LinkedList<>();
         //Tempo gasto: 0.005
         //Tempo leitura:0.437
         for (int i = 0; i < 30000; i++) {
