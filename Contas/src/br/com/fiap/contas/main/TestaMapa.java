@@ -1,7 +1,7 @@
-package main;
+package br.com.fiap.contas.main;
 
-import modelo.Conta;
-import modelo.ContaCorrente;
+import br.com.fiap.contas.modelo.Conta;
+import br.com.fiap.contas.modelo.ContaCorrente;
 
 import java.util.HashMap;
 import java.util.Map;

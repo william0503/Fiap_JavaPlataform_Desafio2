@@ -1,5 +1,9 @@
-package main;
+package br.com.fiap.contas.main;
 
+import br.com.fiap.contas.modelo.Conta;
+import br.com.fiap.contas.modelo.ContaCorrente;
+import br.com.fiap.contas.modelo.ContaPoupanca;
+import br.com.fiap.contas.modelo.SeguroDeVida;
 import modelo.*;
 
 public class TesteDaConta {

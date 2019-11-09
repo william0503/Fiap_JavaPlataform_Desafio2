@@ -1,8 +1,8 @@
-package main;
+package br.com.fiap.contas.main;
 
-import modelo.Banco;
-import modelo.ContaCorrente;
-import modelo.ContaPoupanca;
+import br.com.fiap.contas.modelo.Banco;
+import br.com.fiap.contas.modelo.ContaCorrente;
+import br.com.fiap.contas.modelo.ContaPoupanca;
 
 public class TesteDaContaList {
     public static void main(String[] args) throws Exception {

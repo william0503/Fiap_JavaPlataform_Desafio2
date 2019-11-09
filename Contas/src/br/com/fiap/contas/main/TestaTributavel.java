@@ -1,7 +1,7 @@
-package main;
+package br.com.fiap.contas.main;
 
-import modelo.ContaCorrente;
-import modelo.Tributavel;
+import br.com.fiap.contas.modelo.ContaCorrente;
+import br.com.fiap.contas.modelo.Tributavel;
 
 public class TestaTributavel {
 

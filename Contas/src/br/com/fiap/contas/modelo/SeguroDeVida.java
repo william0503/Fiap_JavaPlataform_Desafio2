@@ -1,4 +1,4 @@
-package modelo;
+package br.com.fiap.contas.modelo;
 
 public class SeguroDeVida implements Tributavel {
     private double valor;

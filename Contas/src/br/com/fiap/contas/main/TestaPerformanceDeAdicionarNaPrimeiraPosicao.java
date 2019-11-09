@@ -1,4 +1,4 @@
-package main;
+package br.com.fiap.contas.main;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

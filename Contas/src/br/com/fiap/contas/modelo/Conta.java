@@ -1,4 +1,4 @@
-package modelo;
+package br.com.fiap.contas.modelo;
 
 public abstract class Conta implements Comparable<Conta> {
     private String titular;

@@ -1,4 +1,4 @@
-package main;
+package br.com.fiap.contas.main;
 
 public class TestaString {
     public static void main(String[] args) {
