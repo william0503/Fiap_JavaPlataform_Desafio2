@@ -7,6 +7,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Testa a lista com inclusao de depositos de volores randomicos em conta corrente.
+ */
 public class TestaLista {
     public static void main(String[] args) {
         List<Conta> contas = new LinkedList<Conta>();
@@ -17,7 +20,7 @@ public class TestaLista {
             conta.setTitular("Titular " + i);
             conta.setNumero(i);
             conta.setAgencia("1000");
-            conta.deposita( Math.abs(rdm.nextInt()));
+            conta.deposita(Math.abs(rdm.nextInt(1000)));
             contas.add(conta);
         }
 

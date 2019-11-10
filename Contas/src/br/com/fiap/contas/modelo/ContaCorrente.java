@@ -1,21 +1,24 @@
 package br.com.fiap.contas.modelo;
 
-public class ContaCorrente extends Conta  implements Tributavel{
+/**
+ * Representa um conta corrente que é tributável.
+ */
+public class ContaCorrente extends Conta implements Tributavel {
 
     @Override
-    public void saca(double valor){
-        if (valor < 0){
+    public void saca(double valor) {
+        if (valor < 0) {
             throw new IllegalArgumentException("Você tentou sacar um valor negativo.");
         }
 
-        if(this.getSaldo() < valor){
+        if (this.getSaldo() < valor) {
             throw new SaldoInsuficienteException(valor);
         }
 
-        this.setSaldo(this.getSaldo() - (valor + 0.10)) ;
+        this.setSaldo(this.getSaldo() - (valor + 0.10));
     }
 
-    public String getTipo(){
+    public String getTipo() {
         return "Conta Corrente";
     }
 

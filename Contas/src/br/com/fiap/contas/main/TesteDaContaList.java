@@ -4,6 +4,9 @@ import br.com.fiap.contas.modelo.Banco;
 import br.com.fiap.contas.modelo.ContaCorrente;
 import br.com.fiap.contas.modelo.ContaPoupanca;
 
+/**
+ * Testa ocorrencia de erro ao tentar realizar o cadastro de um titular já cadastrado.
+ */
 public class TesteDaContaList {
     public static void main(String[] args) throws Exception {
         Banco banco = new Banco ("CaelumBank", 999);

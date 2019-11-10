@@ -1,9 +1,11 @@
 package br.com.fiap.contas.main;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Testes de performace com a inserção na primeira posicao de um ArrayList e um LinkedList.
+ */
 public class TestaPerformanceDeAdicionarNaPrimeiraPosicao {
     public static void main(String[] args) {
         System.out.println("Iniciando...");
@@ -12,7 +14,7 @@ public class TestaPerformanceDeAdicionarNaPrimeiraPosicao {
         List<Integer> teste = new ArrayList<>();
         //Tempo gasto: 0.046
         //Tempo leitura:0.003
-       // List<Integer> teste = new LinkedList<>();
+        // List<Integer> teste = new LinkedList<>();
         //Tempo gasto: 0.005
         //Tempo leitura:0.437
         for (int i = 0; i < 30000; i++) {
@@ -29,6 +31,5 @@ public class TestaPerformanceDeAdicionarNaPrimeiraPosicao {
         long fimFor = System.currentTimeMillis();
         tempo = (fimFor - inicioFor) / 1000.0;
         System.out.println("Tempo leitura:" + tempo);
-
     }
 }

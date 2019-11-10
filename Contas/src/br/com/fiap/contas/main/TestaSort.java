@@ -7,6 +7,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Testes de ordenação utilizando o Collections.sort
+ */
 public class TestaSort {
     public static void main(String[] args) {
         List<ContaCorrente> contas = new ArrayList<>();

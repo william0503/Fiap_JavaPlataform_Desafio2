@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Representa uma empresa que presta serviços financeiros diversos como saques e depósitos.
+ */
 public class Banco {
     private String nome;
     private int numero;
@@ -29,20 +32,19 @@ public class Banco {
         return numero;
     }
 
-    public void adicionaArray(Conta conta){
+    public void adicionaArray(Conta conta) {
         for (int i = 0; i < this.contasA.length; i++) {
-            if(contasA[i] == null) {
-                 contasA[i] = conta;
+            if (contasA[i] == null) {
+                contasA[i] = conta;
                 break;
             }
         }
     }
 
-    public void mostraContasArray(){
+    public void mostraContasArray() {
         for (int i = 0; i < this.contasA.length; i++) {
 
-            if(contasA[i] == null)
-                continue;
+            if (contasA[i] == null) continue;
 
             System.out.println("Conta na posição " + i);
             System.out.println("Titular: " + contasA[i].getTitular());
@@ -53,8 +55,7 @@ public class Banco {
     }
 
     public void adiciona(Conta c) throws Exception {
-
-        if (buscaPorTitular(c.getTitular()) != null){
+        if (buscaPorTitular(c.getTitular()) != null) {
             throw new Exception("Titular já Cadastrado.");
         }
 
@@ -62,27 +63,26 @@ public class Banco {
         contaMap.put(c.getTitular(), c);
     }
 
-    public Conta pega (int x){
+    public Conta pega(int x) {
         return this.contas.get(x);
     }
 
-    public int pegaQuantidadeDeContas(){
+    public int pegaQuantidadeDeContas() {
         return this.contas.size();
     }
 
-    public Conta buscaPorTitular(String nome){
+    public Conta buscaPorTitular(String nome) {
         return contaMap.get(nome);
     }
 
-    public void mostraContas(){
+    public void mostraContas() {
         for (int i = 0; i < this.contas.size(); i++) {
             Conta conta = this.contas.get(i);
             System.out.println("Conta na posição " + i);
             System.out.println("Titular: " + conta.getTitular());
-            System.out.println("Agencia: " + conta.getAgencia());
-            System.out.println("Conta: " + conta    .getNumero());
+            System.out.println("Agência: " + conta.getAgencia());
+            System.out.println("Conta: " + conta.getNumero());
             System.out.println("");
         }
     }
-
 }

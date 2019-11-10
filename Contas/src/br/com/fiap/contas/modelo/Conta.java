@@ -1,5 +1,8 @@
 package br.com.fiap.contas.modelo;
 
+/**
+ * Representa de conta bancaria.
+ */
 public abstract class Conta implements Comparable<Conta> {
     private String titular;
     private double saldo;
@@ -39,7 +42,7 @@ public abstract class Conta implements Comparable<Conta> {
     }
 
     public void deposita(double valor) {
-        if (valor < 0){
+        if (valor < 0) {
             throw new IllegalArgumentException("Você tentou depositar um valor negativo.");
         }
         this.saldo += valor;
@@ -57,12 +60,12 @@ public abstract class Conta implements Comparable<Conta> {
     public abstract String getTipo();
 
     @Override
-    public String toString(){
-        return "[titular=" + titular + ", numero=" + numero + ", agencia=" + agencia + "Saldo=" + saldo + "]";
+    public String toString() {
+        return "[ titular= " + titular + ", numero= " + numero + ", agencia= " + agencia + ", saldo= " + saldo + " ]";
     }
 
     @Override
-    public boolean equals(Object obj){
+    public boolean equals(Object obj) {
         if (obj == null) return false;
 
         Conta outraConta = (Conta) obj;

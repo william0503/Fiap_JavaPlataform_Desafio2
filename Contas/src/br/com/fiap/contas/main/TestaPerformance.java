@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
+/**
+ *  Testes de performace com a inserção e pesquisa utilizaddo um ArrayList e um HashSet.
+ */
 public class TestaPerformance {
     public static void main(String[] args) {
         System.out.println("Iniciando...");
